@@ -16,23 +16,28 @@ img {
 * {
     text-align: center;
     font-family: Calibri;
+    font-size: 16px;
+    max-width: 1200px;
 }
 /* Fin de Estilos globales*/
 .titulo {
     color: deeppink;
+    font-size: 30px;
 }
 
 .titulo2 {
     color: rgb(10, 207, 10);
+    font-size: 25px;
 }
 /* Estilos de lista*/
 ul {
     list-style-type: none;
-    padding: 2% 7% 2% 7%;
+    display: inline-block;
+    padding: 20px;
     border: 6px inset rgb(47, 231, 255) ;
     border-radius: 50%;
     background-color: lawngreen;
-    margin: 1% 35%;
+    width: 200px;
 }
 
 a {
@@ -81,4 +86,9 @@ main {
     padding: 20px;
     width: 70%;
     margin: auto; 
+}
+
+p {
+    width: 50%;
+    margin: auto;
 }
