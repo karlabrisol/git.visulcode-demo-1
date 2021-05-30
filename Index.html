@@ -5,25 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index.html</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/c672bf2245.js" crossorigin="anonymous"></script> 
 </head>
 <body>
-    <img src="IMAGENES/Redes.jpg" alt="Redes Sociales" width="200">
-    <Form>
-        <a style="color: blue;" href="https://codigofacilito.com/articulos/que-es-html" target="_blank">HTML |</a>
-        <a style="color: blue;" href="https://css-tricks.com/" target="_blank">CSS |</a>
-        <a style="color: blue;" href="https://www.javascript.com/" target="_blank">JavaScript</a>
-    </Form>
-    <H2>Tarea 2</H2>
-    <!-- Seccion Principal -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Voluptatibus qui eum eius et incidunt quasi, porro ea. <span style="color: orangered;">  Sit cupiditate voluptas itaque id deserunt maxime</span>,  <br> repudiandae recusandae, architecto, repellendus labore eaque? </p>
-        <h3>Lista de algunas redes sociales</h3>
-    <ul>
-        <li><a style="color: blue;" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-        <li><a style="color: blue;" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-        <li><a style="color: blue;" href="https://twitter.com/?lang=es" target="_blank">Twitter</a></li>
-        <li><a style="color: blue;" href="https://cr.linkedin.com/" target="_blank">linkedIn</a></li>
-    </ul>
+    <header class="header-style"> 
+        <img src="IMAGENES/Redes.jpg" alt="Redes Sociales">
+        <Form>
+            <a href="https://codigofacilito.com/articulos/que-es-html" target="_blank">HTML |</a>
+            <a href="https://css-tricks.com/" target="_blank">CSS |</a>
+            <a href="https://www.javascript.com/" target="_blank">JavaScript</a>
+        </Form>
+    </header>
+    <main>
+        <H2 class="titulo">Mi primera página</H2>
+        <!-- Seccion Principal -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Voluptatibus qui eum eius et incidunt quasi, porro ea. <span>  Sit cupiditate voluptas itaque id deserunt maxime</span>,  <br> repudiandae recusandae, architecto, repellendus labore eaque? </p>
+            <h3 class="titulo2">Lista de algunas redes sociales</h3>
+        <ul>
+            <li><i class="fab fa-facebook-square"></i><a class="facebook" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><i class="fab fa-instagram-square"></i><a class="instagram" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li><i class="fab fa-twitter-square"></i><a class="twitter" href="https://twitter.com/?lang=es" target="_blank">Twitter</a></li>
+            <li><i class="fab fa-linkedin"></i><a class="linkedin" href="https://cr.linkedin.com/" target="_blank">linkedIn</a></li>
+        </ul>
+    </main>
     <!-- Fin de Seccion Principal -->
-    <small> Hecho por Karla Brizuela Solís </small>
+    <footer class="footer-style">
+        <small> Hecho por Karla Brizuela Solís </small>
+    </footer>
 </body>
 </html>

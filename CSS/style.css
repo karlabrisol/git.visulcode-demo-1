@@ -1,0 +1,84 @@
+img {
+    width: 200px;
+}
+
+.header-style {
+    background-color: violet;
+    padding: 8px;
+}
+
+.footer-style {
+    background-color: violet;
+    padding: 4px;
+}
+
+/* Estilos globales*/
+* {
+    text-align: center;
+    font-family: Calibri;
+}
+/* Fin de Estilos globales*/
+.titulo {
+    color: deeppink;
+}
+
+.titulo2 {
+    color: rgb(10, 207, 10);
+}
+/* Estilos de lista*/
+ul {
+    list-style-type: none;
+    padding: 2% 7% 2% 7%;
+    border: 6px inset rgb(47, 231, 255) ;
+    border-radius: 50%;
+    background-color: lawngreen;
+    margin: 1% 35%;
+}
+
+a {
+    color: white;
+}
+
+span {
+    color: orangered;
+}
+
+.facebook {
+    color: red;
+}
+
+.fa-facebook-square {
+    color: red;
+}
+
+.instagram {
+    color: green;
+}
+
+.fa-instagram-square {
+    color: green;
+}
+
+.twitter {
+    color: blue;
+}
+
+.fa-twitter-square {
+    color: blue;
+}
+
+.linkedin {
+    color: green;
+}
+
+.fa-linkedin {
+    color: green;
+}
+/* Fin de Estilos de lista*/
+
+main {
+    background: rgb(238, 214, 206);
+    padding: 20px;
+    width: 70%;
+    margin: auto; 
+}
