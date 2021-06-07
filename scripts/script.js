@@ -11,25 +11,31 @@ function toggleSection() {
 function sumar() {
     var num1 = parseInt(document.getElementById("myNumber1").value); 
     var num2 = parseInt(document.getElementById("myNumber2").value); 
-    var resultado = num1 + num2
-    document.getElementById("result").textContent = "El resultado de la suma es: " + resultado;
+    var resultado = num1 + num2;
+    var operacion = " suma ";
+    validarVacios(resultado,operacion)
 }
 function restar() {
     var num1 = parseInt(document.getElementById("myNumber1").value); 
     var num2 = parseInt(document.getElementById("myNumber2").value); 
-    var resultado = num1 - num2
-    document.getElementById("result").textContent = "El resultado de la resta es: " + resultado;
+    var resultado = num1 - num2;
+    var operacion = " resta ";
+    validarVacios(resultado,operacion)
 }
 function multiplicar() {
     var num1 = parseInt(document.getElementById("myNumber1").value); 
     var num2 = parseInt(document.getElementById("myNumber2").value); 
-    var resultado = num1 * num2
-    document.getElementById("result").textContent = "El resultado de la multiplicación es: " + resultado;
+    var resultado = num1 * num2;
+    var operacion = " multiplicación ";
+    validarVacios(resultado,operacion)
 }
 function validarVacios(resultado,operacion) {
     if(!isNaN(resultado)) {
         imprimirMensaje(operacion,resultado);
     } else {
-        document.getElementById('result').textContent = "Debe ingresar valores numericos";
+        document.getElementById("result").textContent = "Debe ingresar valores numericos";
     }
+}
+function imprimirMensaje(operacion,resultado) {
+    document.getElementById("result").textContent = "El resultado de la" + operacion + "es: " + resultado;
 }
