@@ -33,7 +33,7 @@ function validarVacios(resultado,operacion) {
     if(!isNaN(resultado)) {
         imprimirMensaje(operacion,resultado);
     } else {
-        document.getElementById("result").textContent = "Debe ingresar valores numericos";
+        document.getElementById("result").textContent = "Debe ingresar valores numéricos";
     }
 }
 function imprimirMensaje(operacion,resultado) {
