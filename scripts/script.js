@@ -1,6 +1,6 @@
 function toggleSection() {
     var operacionesContenedor = document.getElementById("operacionesContenedor");
-    if (operacionesContenedor.style.display === "none") {
+    if (!operacionesContenedor.style.display || operacionesContenedor.style.display === "none") {
         operacionesContenedor.style.display = "block";
         document.getElementById("toggleBloque").textContent = "Ocultar Operaciones";
     } else {
@@ -13,21 +13,21 @@ function sumar() {
     var num2 = parseInt(document.getElementById("myNumber2").value); 
     var resultado = num1 + num2;
     var operacion = " suma ";
-    validarVacios(resultado,operacion)
+    validarVacios(resultado,operacion);
 }
 function restar() {
     var num1 = parseInt(document.getElementById("myNumber1").value); 
     var num2 = parseInt(document.getElementById("myNumber2").value); 
     var resultado = num1 - num2;
     var operacion = " resta ";
-    validarVacios(resultado,operacion)
+    validarVacios(resultado,operacion);
 }
 function multiplicar() {
     var num1 = parseInt(document.getElementById("myNumber1").value); 
     var num2 = parseInt(document.getElementById("myNumber2").value); 
     var resultado = num1 * num2;
     var operacion = " multiplicación ";
-    validarVacios(resultado,operacion)
+    validarVacios(resultado,operacion);
 }
 function validarVacios(resultado,operacion) {
     if(!isNaN(resultado)) {
